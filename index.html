@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Energy Field - Find Your Inner Peace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="energy-field-background">
+        <div class="particles"></div>
+        <div class="floating-sparkles"></div>
+        <div class="soft-waves"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="main-title">
+                <span class="title-icon">🌟</span>
+                Healing Energy Field
+                <span class="title-icon">🌟</span>
+            </h1>
+            <p class="subtitle">Enter a space of tranquility and renewal</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Daily Quote Section -->
+            <section class="quote-section">
+                <div class="quote-box">
+                    <div class="quote-icon">💫</div>
+                    <blockquote class="daily-quote" id="dailyQuote">
+                        "In the gentle embrace of stillness, we find the strength to heal and the wisdom to grow."
+                    </blockquote>
+                    <cite class="quote-author">- Daily Wisdom</cite>
+                </div>
+            </section>
+
+            <!-- Mood Tracker Section -->
+            <section class="mood-section">
+                <div class="mood-tracker">
+                    <h2 class="section-title">
+                        <i class="fas fa-heart"></i>
+                        How are you feeling today?
+                    </h2>
+                    <div class="mood-buttons">
+                        <button class="mood-btn" data-mood="happy">
+                            <span class="mood-emoji">😊</span>
+                            <span class="mood-label">Happy</span>
+                        </button>
+                        <button class="mood-btn" data-mood="anxious">
+                            <span class="mood-emoji">😰</span>
+                            <span class="mood-label">Anxious</span>
+                        </button>
+                        <button class="mood-btn" data-mood="tired">
+                            <span class="mood-emoji">😴</span>
+                            <span class="mood-label">Tired</span>
+                        </button>
+                        <button class="mood-btn" data-mood="energized">
+                            <span class="mood-emoji">⚡</span>
+                            <span class="mood-label">Energized</span>
+                        </button>
+                    </div>
+                    <div class="mood-response" id="moodResponse">
+                        <div class="mood-quote" id="moodQuote"></div>
+                        <div class="mood-suggestion" id="moodSuggestion"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meditation Player Section -->
+            <section class="meditation-section">
+                <div class="meditation-player">
+                    <h2 class="section-title">
+                        <i class="fas fa-music"></i>
+                        Meditation Sounds
+                    </h2>
+                    <div class="player-controls">
+                        <button class="play-btn" id="playBtn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="track-info">
+                            <span class="track-name">Gentle Rain Meditation</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                        </div>
+                        <div class="volume-control">
+                            <i class="fas fa-volume-up"></i>
+                            <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Energy Boost Section -->
+            <section class="energy-section">
+                <button class="energy-boost-btn" id="energyBoostBtn">
+                    <span class="btn-icon">⚡</span>
+                    <span class="btn-text">Boost My Energy</span>
+                    <span class="btn-icon">⚡</span>
+                </button>
+                <div class="energy-message" id="energyMessage"></div>
+            </section>
+
+            <!-- Crystal Mode Toggle -->
+            <section class="crystal-section">
+                <div class="crystal-toggle">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="crystalModeToggle">
+                        <span class="toggle-slider"></span>
+                        <span class="toggle-text">
+                            <i class="fas fa-gem"></i>
+                            Crystal Mode
+                        </span>
+                    </label>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">
+                <i class="fas fa-heart"></i>
+                Created with healing intentions
+                <i class="fas fa-heart"></i>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="meditationAudio" preload="auto">
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
